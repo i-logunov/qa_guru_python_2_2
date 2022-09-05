@@ -1,6 +1,7 @@
 from selene import be, have
 from selene.support.shared import browser
 
+
 def test_positive():
     browser.open('https://google.com/ncr')
     browser.element('[name="q"]').should(be.blank).type('selene').press_enter()
